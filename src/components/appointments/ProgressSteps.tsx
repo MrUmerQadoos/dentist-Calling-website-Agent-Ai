@@ -1,116 +1,35 @@
-/* ============================================= */
-/* ===== PROGRESS STEPS ======================= */
-/* ============================================= */
-import { ChevronRightIcon, StethoscopeIcon, ClockIcon, CheckCircleIcon } from "lucide-react";
+# 🔒 Source Code Access - Contact Required
 
-const PROGRESS_STEPS = [
-  { name: "Select Dentist", icon: StethoscopeIcon },
-  { name: "Choose Time", icon: ClockIcon },
-  { name: "Confirm", icon: CheckCircleIcon },
-];
+## ⚠️ Proprietary Code Alert
+The source code for **Dential AI - AI-Powered Voice Calling Agent** is proprietary and protected intellectual property. The codebase is not publicly available for viewing, copying, or distribution.
 
-function ProgressSteps({ currentStep }: { currentStep: number }) {
-  return (
-    <div className="mb-10 animate-fade-in-up">
-      {/* Progress bar background */}
-      <div className="relative mb-6">
-        <div
-          className="h-[2px] w-full rounded-full"
-          style={{ background: "rgba(255,255,255,0.06)" }}
-        />
-        <div
-          className="absolute top-0 left-0 h-[2px] rounded-full transition-all duration-700 ease-out"
-          style={{
-            width: `${((currentStep - 1) / (PROGRESS_STEPS.length - 1)) * 100}%`,
-            background: "linear-gradient(to right, #00D2FF, #7C3AED, #D946EF)",
-            boxShadow: "0 0 12px rgba(0,210,255,0.3)",
-          }}
-        />
-      </div>
+## 📞 How to Access the Code
+If you're interested in:
+- Purchasing the complete source code
+- Licensing the software for your business
+- Custom development services
+- Technical consultation
 
-      {/* Step indicators */}
-      <div className="flex items-center justify-between">
-        {PROGRESS_STEPS.map((step, index) => {
-          const stepNumber = index + 1;
-          const isActive = currentStep >= stepNumber;
-          const isCurrent = currentStep === stepNumber;
-          const Icon = step.icon;
+## 🎯 Contact Information
+**Umer Qadoos**  
+📱 **Phone:** +92 318 556 2461  
+📧 **Email:** umerqadoos74@gmail.com  
+🌐 **Portfolio:** [https://umerqadoos.codes/](https://umerqadoos.codes/)  
+💼 **LinkedIn:** [linkedin.com/in/umerqadoos](https://linkedin.com/in/umerqadoos)
 
-          return (
-            <div key={stepNumber} className="flex items-center gap-2.5">
-              <div className="relative">
-                {/* Glow ring for current step */}
-                {isCurrent && (
-                  <div
-                    className="absolute pointer-events-none animate-pulse"
-                    style={{
-                      inset: "-6px",
-                      borderRadius: "50%",
-                      background:
-                        "radial-gradient(circle, rgba(0,210,255,0.2) 0%, transparent 70%)",
-                    }}
-                  />
-                )}
-                <div
-                  className="relative w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500"
-                  style={
-                    isActive
-                      ? {
-                          background:
-                            "linear-gradient(135deg, #4FACFE 0%, #7C3AED 50%, #A18CD1 100%)",
-                          color: "#fff",
-                          boxShadow:
-                            "0 4px 20px rgba(79,172,254,0.3), 0 2px 8px rgba(124,58,237,0.2)",
-                        }
-                      : {
-                          background: "rgba(255,255,255,0.04)",
-                          border: "1px solid rgba(255,255,255,0.08)",
-                          color: "#52525B",
-                        }
-                  }
-                >
-                  {isActive ? (
-                    <Icon className="w-4 h-4" strokeWidth={1.8} />
-                  ) : (
-                    <span className="text-xs font-bold">{stepNumber}</span>
-                  )}
-                </div>
-              </div>
+## 💼 What You'll Receive
+Upon legitimate purchase/licensing:
+1. **Full Source Code** - Complete Next.js/TypeScript frontend and Node.js backend
+2. **Database Schema** - PostgreSQL with Prisma ORM
+3. **AI Integration** - Vapi.ai configuration and OpenAI setup
+4. **Payment Integration** - Stripe subscription handling
+5. **Deployment Guide** - Step-by-step deployment to Vercel/AWS
+6. **Technical Support** - 30 days of post-purchase support
+7. **Customization** - Options to tailor for your specific needs
 
-              <div className="flex flex-col">
-                <span
-                  className="font-semibold transition-colors duration-300"
-                  style={{
-                    fontSize: "13px",
-                    color: isActive ? "#fff" : "#52525B",
-                  }}
-                >
-                  {step.name}
-                </span>
-                {isCurrent && (
-                  <span
-                    className="font-bold uppercase tracking-wider animate-pulse"
-                    style={{ fontSize: "9px", color: "#00D2FF" }}
-                  >
-                    Current
-                  </span>
-                )}
-              </div>
+## 🛡️ Legal Notice
+Unauthorized access, copying, distribution, or use of this codebase is strictly prohibited and may result in legal action. All rights reserved © 2025 Umer Qadoos.
 
-              {stepNumber < PROGRESS_STEPS.length && (
-                <ChevronRightIcon
-                  className="w-4 h-4 mx-2"
-                  style={{
-                    color: isActive ? "rgba(0,210,255,0.4)" : "#52525B",
-                  }}
-                />
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
+---
 
-export default ProgressSteps;
+*For legitimate inquiries only. Please respect intellectual property rights.*

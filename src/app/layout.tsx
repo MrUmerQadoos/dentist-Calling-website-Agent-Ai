@@ -1,127 +1,35 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import UserSync from "@/components/UserSync";
-import TanStackProvider from "@/components/providers/TanStackProvider";
-import { Toaster } from "sonner";
+# 🔒 Source Code Access - Contact Required
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+## ⚠️ Proprietary Code Alert
+The source code for **Dential AI - AI-Powered Voice Calling Agent** is proprietary and protected intellectual property. The codebase is not publicly available for viewing, copying, or distribution.
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+## 📞 How to Access the Code
+If you're interested in:
+- Purchasing the complete source code
+- Licensing the software for your business
+- Custom development services
+- Technical consultation
 
-export const metadata: Metadata = {
-  title: "DentWise - AI Powered Dental Assistant",
-  description:
-    "Get instant dental advice through voice calls with our AI assistant. Avaiable 24/7.",
-};
+## 🎯 Contact Information
+**Umer Qadoos**  
+📱 **Phone:** +92 318 556 2461  
+📧 **Email:** umerqadoos74@gmail.com  
+🌐 **Portfolio:** [https://umerqadoos.codes/](https://umerqadoos.codes/)  
+💼 **LinkedIn:** [linkedin.com/in/umerqadoos](https://linkedin.com/in/umerqadoos)
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <TanStackProvider>
-      <ClerkProvider
-        appearance={{
-          variables: {
-            colorPrimary: "#00D2FF",
-            colorBackground: "#070815",
-            colorText: "#E4E4E7",
-            colorTextSecondary: "#A1A1AA",
-            colorInputBackground: "#0c0f22",
-            colorBorder: "#1e2040",
-            colorDanger: "#ef4444",
-            colorSuccess: "#10b981",
-            colorWarning: "#f59e0b",
-            borderRadius: "0.75rem",
-            fontFamily: "var(--font-geist-sans)",
-          },
-          elements: {
-            formButtonPrimary: {
-              backgroundColor: "#00D2FF",
-              color: "#070815",
-              fontWeight: "600",
-              "&:hover": {
-                backgroundColor: "#00B8E6",
-              },
-            },
-            card: {
-              backgroundColor: "#0c0f22",
-              border: "1px solid #1e2040",
-              boxShadow: "0px 1px 4px 0px hsl(0 0% 0% / 0.2), 0px 4px 6px -1px hsl(0 0% 0% / 0.15)",
-            },
-            headerTitle: {
-              color: "#E4E4E7",
-            },
-            headerSubtitle: {
-              color: "#A1A1AA",
-            },
-            socialButtonsBlockButton: {
-              backgroundColor: "#0c0f22",
-              border: "1px solid #1e2040",
-              color: "#E4E4E7",
-              "&:hover": {
-                backgroundColor: "#161830",
-              },
-            },
-            dividerLine: {
-              backgroundColor: "#1e2040",
-            },
-            dividerText: {
-              color: "#A1A1AA",
-            },
-            formFieldLabel: {
-              color: "#E4E4E7",
-            },
-            formFieldInput: {
-              backgroundColor: "#0c0f22",
-              border: "1px solid #1e2040",
-              color: "#E4E4E7",
-              "&:focus": {
-                borderColor: "#00D2FF",
-                boxShadow: "0 0 0 1px #00D2FF",
-              },
-            },
-            footer: {
-              backgroundColor: "transparent",
-            },
-            userButtonPopoverCard: {
-              backgroundColor: "#0c0f22",
-              border: "1px solid #1e2040",
-              boxShadow: "0px 8px 32px rgba(0, 0, 0, 0.4)",
-            },
-            userButtonPopoverActionButton: {
-              color: "#E4E4E7",
-              "&:hover": {
-                backgroundColor: "#161830",
-              },
-            },
-            userButtonPopoverActionButtonText: {
-              color: "#E4E4E7",
-            },
-            userButtonPopoverFooter: {
-              backgroundColor: "transparent",
-            },
-          },
-        }}
-      >
-        <html lang="en">
-          <body className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}>
-            {/* this is done in the home page component */}
-            {/* <UserSync /> */}
-            <Toaster />
-            {children}
-          </body>
-        </html>
-      </ClerkProvider>
-    </TanStackProvider>
-  );
-}
+## 💼 What You'll Receive
+Upon legitimate purchase/licensing:
+1. **Full Source Code** - Complete Next.js/TypeScript frontend and Node.js backend
+2. **Database Schema** - PostgreSQL with Prisma ORM
+3. **AI Integration** - Vapi.ai configuration and OpenAI setup
+4. **Payment Integration** - Stripe subscription handling
+5. **Deployment Guide** - Step-by-step deployment to Vercel/AWS
+6. **Technical Support** - 30 days of post-purchase support
+7. **Customization** - Options to tailor for your specific needs
+
+## 🛡️ Legal Notice
+Unauthorized access, copying, distribution, or use of this codebase is strictly prohibited and may result in legal action. All rights reserved © 2025 Umer Qadoos.
+
+---
+
+*For legitimate inquiries only. Please respect intellectual property rights.*

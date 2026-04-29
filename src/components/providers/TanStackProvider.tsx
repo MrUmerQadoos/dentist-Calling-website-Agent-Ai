@@ -1,43 +1,35 @@
-// In Next.js, this file would be called: app/providers.tsx
-"use client";
+# 🔒 Source Code Access - Contact Required
 
-// Since QueryClientProvider relies on useContext under the hood, we have to put 'use client' on top
-import { isServer, QueryClient, QueryClientProvider } from "@tanstack/react-query";
+## ⚠️ Proprietary Code Alert
+The source code for **Dential AI - AI-Powered Voice Calling Agent** is proprietary and protected intellectual property. The codebase is not publicly available for viewing, copying, or distribution.
 
-function makeQueryClient() {
-  return new QueryClient({
-    defaultOptions: {
-      queries: {
-        // With SSR, we usually want to set some default staleTime
-        // above 0 to avoid refetching immediately on the client
-        staleTime: 60 * 1000,
-      },
-    },
-  });
-}
+## 📞 How to Access the Code
+If you're interested in:
+- Purchasing the complete source code
+- Licensing the software for your business
+- Custom development services
+- Technical consultation
 
-let browserQueryClient: QueryClient | undefined = undefined;
+## 🎯 Contact Information
+**Umer Qadoos**  
+📱 **Phone:** +92 318 556 2461  
+📧 **Email:** umerqadoos74@gmail.com  
+🌐 **Portfolio:** [https://umerqadoos.codes/](https://umerqadoos.codes/)  
+💼 **LinkedIn:** [linkedin.com/in/umerqadoos](https://linkedin.com/in/umerqadoos)
 
-function getQueryClient() {
-  if (isServer) {
-    // Server: always make a new query client
-    return makeQueryClient();
-  } else {
-    // Browser: make a new query client if we don't already have one
-    // This is very important, so we don't re-make a new client if React
-    // suspends during the initial render. This may not be needed if we
-    // have a suspense boundary BELOW the creation of the query client
-    if (!browserQueryClient) browserQueryClient = makeQueryClient();
-    return browserQueryClient;
-  }
-}
+## 💼 What You'll Receive
+Upon legitimate purchase/licensing:
+1. **Full Source Code** - Complete Next.js/TypeScript frontend and Node.js backend
+2. **Database Schema** - PostgreSQL with Prisma ORM
+3. **AI Integration** - Vapi.ai configuration and OpenAI setup
+4. **Payment Integration** - Stripe subscription handling
+5. **Deployment Guide** - Step-by-step deployment to Vercel/AWS
+6. **Technical Support** - 30 days of post-purchase support
+7. **Customization** - Options to tailor for your specific needs
 
-export default function TanStackProvider({ children }: { children: React.ReactNode }) {
-  // NOTE: Avoid useState when initializing the query client if you don't
-  //       have a suspense boundary between this and the code that may
-  //       suspend because React will throw away the client on the initial
-  //       render if it suspends and there is no boundary
-  const queryClient = getQueryClient();
+## 🛡️ Legal Notice
+Unauthorized access, copying, distribution, or use of this codebase is strictly prohibited and may result in legal action. All rights reserved © 2025 Umer Qadoos.
 
-  return <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>;
-}
+---
+
+*For legitimate inquiries only. Please respect intellectual property rights.*

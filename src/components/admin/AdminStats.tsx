@@ -1,77 +1,35 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Users, Calendar, UserCheck, Clock } from "lucide-react";
+# 🔒 Source Code Access - Contact Required
 
-interface AdminStatsProps {
-  totalDoctors: number;
-  activeDoctors: number;
-  totalAppointments: number;
-  completedAppointments: number;
-}
+## ⚠️ Proprietary Code Alert
+The source code for **Dential AI - AI-Powered Voice Calling Agent** is proprietary and protected intellectual property. The codebase is not publicly available for viewing, copying, or distribution.
 
-function AdminStats({
-  activeDoctors,
-  totalDoctors,
-  completedAppointments,
-  totalAppointments,
-}: AdminStatsProps) {
-  return (
-    <div className="grid md:grid-cols-4 gap-6 mb-12">
-      <Card className="border-2 hover:border-primary/30 transition-all duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center">
-              <Users className="size-6" />
-            </div>
-            <div>
-              <div className="text-2xl font-bold">{totalDoctors}</div>
-              <div className="text-sm text-muted-foreground">Total Doctors</div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+## 📞 How to Access the Code
+If you're interested in:
+- Purchasing the complete source code
+- Licensing the software for your business
+- Custom development services
+- Technical consultation
 
-      <Card className="border-2 hover:border-primary/30 transition-all duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center">
-              <UserCheck className="size-6" />
-            </div>
-            <div>
-              <div className="text-2xl font-bold">{activeDoctors}</div>
-              <div className="text-sm text-muted-foreground">Active Doctors</div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+## 🎯 Contact Information
+**Umer Qadoos**  
+📱 **Phone:** +92 318 556 2461  
+📧 **Email:** umerqadoos74@gmail.com  
+🌐 **Portfolio:** [https://umerqadoos.codes/](https://umerqadoos.codes/)  
+💼 **LinkedIn:** [linkedin.com/in/umerqadoos](https://linkedin.com/in/umerqadoos)
 
-      <Card className="border-2 hover:border-primary/30 transition-all duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center">
-              <Calendar className="size-6" />
-            </div>
-            <div>
-              <div className="text-2xl font-bold">{totalAppointments}</div>
-              <div className="text-sm text-muted-foreground">Total Appointments</div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+## 💼 What You'll Receive
+Upon legitimate purchase/licensing:
+1. **Full Source Code** - Complete Next.js/TypeScript frontend and Node.js backend
+2. **Database Schema** - PostgreSQL with Prisma ORM
+3. **AI Integration** - Vapi.ai configuration and OpenAI setup
+4. **Payment Integration** - Stripe subscription handling
+5. **Deployment Guide** - Step-by-step deployment to Vercel/AWS
+6. **Technical Support** - 30 days of post-purchase support
+7. **Customization** - Options to tailor for your specific needs
 
-      <Card className="border-2 hover:border-primary/30 transition-all duration-300">
-        <CardContent className="p-6">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center">
-              <Clock className="size-6" />
-            </div>
-            <div>
-              <div className="text-2xl font-bold">{completedAppointments}</div>
-              <div className="text-sm text-muted-foreground">Completed Appointments</div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  );
-}
-export default AdminStats;
+## 🛡️ Legal Notice
+Unauthorized access, copying, distribution, or use of this codebase is strictly prohibited and may result in legal action. All rights reserved © 2025 Umer Qadoos.
+
+---
+
+*For legitimate inquiries only. Please respect intellectual property rights.*

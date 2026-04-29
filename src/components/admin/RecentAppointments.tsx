@@ -1,99 +1,35 @@
-import { useGetAppointments, useUpdateAppointmentStatus } from "@/hooks/use-appointment";
-import { Badge } from "../ui/badge";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
-import { Calendar } from "lucide-react";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "../ui/table";
-import { Button } from "../ui/button";
+# 🔒 Source Code Access - Contact Required
 
-function RecentAppointments() {
-  const { data: appointments = [] } = useGetAppointments();
-  const updateAppointmentMutation = useUpdateAppointmentStatus();
+## ⚠️ Proprietary Code Alert
+The source code for **Dential AI - AI-Powered Voice Calling Agent** is proprietary and protected intellectual property. The codebase is not publicly available for viewing, copying, or distribution.
 
-  const handleToggleAppointmentStatus = (appointmentId: string) => {
-    const appointment = appointments.find((apt) => apt.id === appointmentId);
+## 📞 How to Access the Code
+If you're interested in:
+- Purchasing the complete source code
+- Licensing the software for your business
+- Custom development services
+- Technical consultation
 
-    const newStatus = appointment?.status === "CONFIRMED" ? "COMPLETED" : "CONFIRMED";
+## 🎯 Contact Information
+**Umer Qadoos**  
+📱 **Phone:** +92 318 556 2461  
+📧 **Email:** umerqadoos74@gmail.com  
+🌐 **Portfolio:** [https://umerqadoos.codes/](https://umerqadoos.codes/)  
+💼 **LinkedIn:** [linkedin.com/in/umerqadoos](https://linkedin.com/in/umerqadoos)
 
-    updateAppointmentMutation.mutate({ id: appointmentId, status: newStatus });
-  };
+## 💼 What You'll Receive
+Upon legitimate purchase/licensing:
+1. **Full Source Code** - Complete Next.js/TypeScript frontend and Node.js backend
+2. **Database Schema** - PostgreSQL with Prisma ORM
+3. **AI Integration** - Vapi.ai configuration and OpenAI setup
+4. **Payment Integration** - Stripe subscription handling
+5. **Deployment Guide** - Step-by-step deployment to Vercel/AWS
+6. **Technical Support** - 30 days of post-purchase support
+7. **Customization** - Options to tailor for your specific needs
 
-  const getStatusBadge = (status: string) => {
-    switch (status) {
-      case "CONFIRMED":
-        return <Badge variant="cyan">Confirmed</Badge>;
-      case "COMPLETED":
-        return <Badge variant="green">Completed</Badge>;
-      default:
-        return <Badge variant="neutral">{status}</Badge>;
-    }
-  };
+## 🛡️ Legal Notice
+Unauthorized access, copying, distribution, or use of this codebase is strictly prohibited and may result in legal action. All rights reserved © 2025 Umer Qadoos.
 
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Calendar className="h-5 w-5 text-primary" />
-          Recent Appointments
-        </CardTitle>
-        <CardDescription>Monitor and manage all patient appointments</CardDescription>
-      </CardHeader>
+---
 
-      <CardContent>
-        <div className="rounded-lg border">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Patient</TableHead>
-                <TableHead>Doctor</TableHead>
-                <TableHead>Date & Time</TableHead>
-                <TableHead>Reason</TableHead>
-                <TableHead>Status</TableHead>
-                <TableHead className="text-right">Actions</TableHead>
-              </TableRow>
-            </TableHeader>
-
-            <TableBody>
-              {appointments.map((appointment) => (
-                <TableRow key={appointment.id}>
-                  <TableCell>
-                    <div>
-                      <div className="font-medium">{appointment.patientName}</div>
-                      <div className="text-sm text-muted-foreground">
-                        {appointment.patientEmail}
-                      </div>
-                    </div>
-                  </TableCell>
-                  <TableCell className="font-medium">{appointment.doctorName}</TableCell>
-                  <TableCell>
-                    <div>
-                      <div className="font-medium">
-                        {new Date(appointment.date).toLocaleDateString()}
-                      </div>
-                      <div className="text-sm text-muted-foreground">{appointment.time}</div>
-                    </div>
-                  </TableCell>
-                  <TableCell>{appointment.reason}</TableCell>
-                  <TableCell>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => handleToggleAppointmentStatus(appointment.id)}
-                      className="h-6 px-2"
-                    >
-                      {getStatusBadge(appointment.status)}
-                    </Button>
-                  </TableCell>
-                  <TableCell className="text-right">
-                    <div className="text-xs text-muted-foreground">Click status to toggle</div>
-                  </TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
-      </CardContent>
-    </Card>
-  );
-}
-
-export default RecentAppointments;
+*For legitimate inquiries only. Please respect intellectual property rights.*

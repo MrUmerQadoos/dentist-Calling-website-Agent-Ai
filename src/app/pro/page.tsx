@@ -1,59 +1,35 @@
-import Navbar from "@/components/Navbar";
-import { PricingCards } from "@/components/pro/PricingCards";
-import { auth, currentUser } from "@clerk/nextjs/server";
-import { CrownIcon } from "lucide-react";
-import { redirect } from "next/navigation";
+# 🔒 Source Code Access - Contact Required
 
-async function ProPage() {
-  const user = await currentUser();
+## ⚠️ Proprietary Code Alert
+The source code for **Dential AI - AI-Powered Voice Calling Agent** is proprietary and protected intellectual property. The codebase is not publicly available for viewing, copying, or distribution.
 
-  if (!user) redirect("/");
+## 📞 How to Access the Code
+If you're interested in:
+- Purchasing the complete source code
+- Licensing the software for your business
+- Custom development services
+- Technical consultation
 
-  return (
-    <>
-      <Navbar />
+## 🎯 Contact Information
+**Umer Qadoos**  
+📱 **Phone:** +92 318 556 2461  
+📧 **Email:** umerqadoos74@gmail.com  
+🌐 **Portfolio:** [https://umerqadoos.codes/](https://umerqadoos.codes/)  
+💼 **LinkedIn:** [linkedin.com/in/umerqadoos](https://linkedin.com/in/umerqadoos)
 
-      <div className="max-w-7xl mx-auto px-6 py-8 pt-24">
-        <div className="mb-12 overflow-hidden">
-          <div className="flex items-center justify-between bg-gradient-to-br from-primary/10 to-background rounded-3xl p-8 border border-primary/20">
-            <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-primar/10 rounded-full border border-primary/20 ">
-                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-primary">Upgrade to Pro</span>
-              </div>
+## 💼 What You'll Receive
+Upon legitimate purchase/licensing:
+1. **Full Source Code** - Complete Next.js/TypeScript frontend and Node.js backend
+2. **Database Schema** - PostgreSQL with Prisma ORM
+3. **AI Integration** - Vapi.ai configuration and OpenAI setup
+4. **Payment Integration** - Stripe subscription handling
+5. **Deployment Guide** - Step-by-step deployment to Vercel/AWS
+6. **Technical Support** - 30 days of post-purchase support
+7. **Customization** - Options to tailor for your specific needs
 
-              <div>
-                <h1 className="text-4xl font-bold mb-2">Unlock Premium AI Dental Care</h1>
-                <p className="text-muted-foreground">
-                  Get unlimited AI consultations, advanced features, and priority support to take
-                  your dental health to the next level.
-                </p>
-              </div>
-            </div>
+## 🛡️ Legal Notice
+Unauthorized access, copying, distribution, or use of this codebase is strictly prohibited and may result in legal action. All rights reserved © 2025 Umer Qadoos.
 
-            <div className="hidden lg:block">
-              <div className="w-32 h-32 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center">
-                <CrownIcon className="w-16 h-16 text-primary" />
-              </div>
-            </div>
-          </div>
-        </div>
+---
 
-        {/* PRICING SECTION */}
-        <div className="space-y-8">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold">Choose Your Plan</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Select the perfect plan for your dental care needs. All plans include secure access
-              and bank-level encryption.
-            </p>
-          </div>
-
-          <PricingCards />
-        </div>
-      </div>
-    </>
-  );
-}
-
-export default ProPage;
+*For legitimate inquiries only. Please respect intellectual property rights.*

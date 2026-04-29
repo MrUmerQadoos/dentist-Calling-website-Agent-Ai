@@ -1,154 +1,35 @@
-import { useUpdateDoctor } from "@/hooks/use-doctors";
-import { formatPhoneNumber } from "@/lib/utils";
-import { Doctor, Gender } from "@prisma/client";
-import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "../ui/dialog";
-import { Label } from "../ui/label";
-import { Input } from "../ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
-import { Button } from "../ui/button";
+# 🔒 Source Code Access - Contact Required
 
-interface EditDoctorDialogProps {
-  isOpen: boolean;
-  onClose: () => void;
-  doctor: Doctor | null;
-}
+## ⚠️ Proprietary Code Alert
+The source code for **Dential AI - AI-Powered Voice Calling Agent** is proprietary and protected intellectual property. The codebase is not publicly available for viewing, copying, or distribution.
 
-function EditDoctorDialog({ doctor, isOpen, onClose }: EditDoctorDialogProps) {
-  const [editingDoctor, setEditingDoctor] = useState<Doctor | null>(doctor);
+## 📞 How to Access the Code
+If you're interested in:
+- Purchasing the complete source code
+- Licensing the software for your business
+- Custom development services
+- Technical consultation
 
-  const updateDoctorMutation = useUpdateDoctor();
+## 🎯 Contact Information
+**Umer Qadoos**  
+📱 **Phone:** +92 318 556 2461  
+📧 **Email:** umerqadoos74@gmail.com  
+🌐 **Portfolio:** [https://umerqadoos.codes/](https://umerqadoos.codes/)  
+💼 **LinkedIn:** [linkedin.com/in/umerqadoos](https://linkedin.com/in/umerqadoos)
 
-  const handlePhoneChange = (value: string) => {
-    const formattedPhoneNumber = formatPhoneNumber(value);
-    if (editingDoctor) {
-      setEditingDoctor({ ...editingDoctor, phone: formattedPhoneNumber });
-    }
-  };
+## 💼 What You'll Receive
+Upon legitimate purchase/licensing:
+1. **Full Source Code** - Complete Next.js/TypeScript frontend and Node.js backend
+2. **Database Schema** - PostgreSQL with Prisma ORM
+3. **AI Integration** - Vapi.ai configuration and OpenAI setup
+4. **Payment Integration** - Stripe subscription handling
+5. **Deployment Guide** - Step-by-step deployment to Vercel/AWS
+6. **Technical Support** - 30 days of post-purchase support
+7. **Customization** - Options to tailor for your specific needs
 
-  const handleSave = () => {
-    if (editingDoctor) {
-      updateDoctorMutation.mutate({ ...editingDoctor }, { onSuccess: handleClose });
-    }
-  };
+## 🛡️ Legal Notice
+Unauthorized access, copying, distribution, or use of this codebase is strictly prohibited and may result in legal action. All rights reserved © 2025 Umer Qadoos.
 
-  const handleClose = () => {
-    onClose();
-    setEditingDoctor(null);
-  };
+---
 
-  return (
-    <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="sm:max-w-[500px]">
-        <DialogHeader>
-          <DialogTitle>Edit Doctor</DialogTitle>
-          <DialogDescription>Update doctor information and status.</DialogDescription>
-        </DialogHeader>
-
-        {editingDoctor && (
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input
-                  id="name"
-                  value={editingDoctor.name}
-                  onChange={(e) => setEditingDoctor({ ...editingDoctor, name: e.target.value })}
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="speciality">Speciality</Label>
-                <Input
-                  id="speciality"
-                  value={editingDoctor.speciality}
-                  onChange={(e) =>
-                    setEditingDoctor({ ...editingDoctor, speciality: e.target.value })
-                  }
-                />
-              </div>
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                value={editingDoctor.email}
-                onChange={(e) => setEditingDoctor({ ...editingDoctor, email: e.target.value })}
-              />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="phone">Phone</Label>
-              <Input
-                id="phone"
-                value={editingDoctor.phone}
-                onChange={(e) => handlePhoneChange(e.target.value)}
-                placeholder="(555) 123-4567"
-              />
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="gender">Gender</Label>
-                <Select
-                  value={editingDoctor.gender || ""}
-                  onValueChange={(value) =>
-                    setEditingDoctor({ ...editingDoctor, gender: value as Gender })
-                  }
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select gender" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="MALE">Male</SelectItem>
-                    <SelectItem value="FEMALE">Female</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="status">Status</Label>
-                <Select
-                  value={editingDoctor.isActive ? "active" : "inactive"}
-                  onValueChange={(value) =>
-                    setEditingDoctor({ ...editingDoctor, isActive: value === "active" })
-                  }
-                >
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="active">Active</SelectItem>
-                    <SelectItem value="inactive">Inactive</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-          </div>
-        )}
-
-        <DialogFooter>
-          <Button variant="outline" onClick={handleClose}>
-            Cancel
-          </Button>
-          <Button
-            onClick={handleSave}
-            className="bg-primary hover:bg-primary/90"
-            disabled={updateDoctorMutation.isPending}
-          >
-            {updateDoctorMutation.isPending ? "Saving..." : "Save Changes"}
-          </Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
-  );
-}
-
-export default EditDoctorDialog;
+*For legitimate inquiries only. Please respect intellectual property rights.*
